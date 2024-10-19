@@ -1,15 +1,20 @@
 package lanchonete;
 
+import lanchonete.area.cliente.Cliente;
+import lanchonete.atendimento.Atendente;
+import lanchonete.atendimento.cozinha.Almoxarife;
+import lanchonete.atendimento.cozinha.Cozinheiro;
+
 public class Estabelecimento {
 	public static void main(String[] args) {
 		Cozinheiro cozinheiro = new Cozinheiro();
 		//Ações que não precisam estarem disponíveis para toda a aplicação
-		cozinheiro.lavarIngredientes();
-		cozinheiro.baterVitaminaLiquidificador();
-		cozinheiro.selecionarIngredientesVitamina();
-		cozinheiro.prepararLanche();
-		cozinheiro.prepararVitamina();
-		cozinheiro.prepararVitamina();
+		//cozinheiro.lavarIngredientes();
+		//cozinheiro.baterVitaminaLiquidificador();
+		//cozinheiro.selecionarIngredientesVitamina();
+		//cozinheiro.prepararLanche();
+		//cozinheiro.prepararVitamina();
+		
 		
 		//ações que estabelecimento precisa ter ciência
 		cozinheiro.adicionarSucoNoBalcao();
@@ -18,18 +23,16 @@ public class Estabelecimento {
 		
 		Almoxarife almoxarife = new Almoxarife();
 		//Ações que não precisam estarem disponíveis para toda a aplicação
-		almoxarife.controlarEntrada();
-		almoxarife.controlarSaida();
-		//ações que estabelecimento precisa ter ciência
-		almoxarife.entregarIngredientes();
-		almoxarife.trocarGas();
+		//almoxarife.controlarEntrada();
+		//almoxarife.controlarSaida();
+		
+		
 		
 		Atendente atendente = new Atendente();
 		atendente.pegarLancheCozinha();
 		atendente.receberPagamento();
 		atendente.servindoMesa();
-		//ações que estabelecimento precisa ter ciência
-		atendente.trocarGas();
+		
 		
 		Cliente cliente = new Cliente();
 		cliente.escolherLanche();
@@ -44,9 +47,9 @@ public class Estabelecimento {
 		cliente.consultarSaldoAplicativo();
 		
 		//já pensou os cliente ouvindo que o gás acabou?
-		cozinheiro.pedirParaTrocarGas(atendente);
-		cozinheiro.pedirParaTrocarGas(almoxarife);
+		//cozinheiro.pedirParaTrocarGas(atendente);
+		//cozinheiro.pedirParaTrocarGas(almoxarife);
 		
-		//parei no minuto 12:40
+		
 	}
 }
